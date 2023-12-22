@@ -1,5 +1,5 @@
 @echo off &chcp 850 >nul &pushd "%~dp0"
-@set "0=%~f0" &powershell -nop -c $f=[IO.File]::ReadAllText($env:0)-split':bat2file\:.*';iex($f[1]); X(1) &timeout /t 6 &exit/b
+@set "0=%~f0" &powershell -nop -c $f=[IO.File]::ReadAllText($env:0)-split':bat2file\:.*';iex($f[1]); X(1) &exit &exit/b
 
 :bat2file: Compressed2TXT v6.5
 $k='!Vak|fv<%lo)2wyUYPCOe$dhpQFcNH>^m~M[04(r#-Wz`n\;5*iRIXsDqA}GxK&/bugt{S97]?,J+3TLB8_6=Z.Ej1@'; Add-Type -Ty @'
